@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm7bbnyq3gtku"]
+
+[ext_resource type="Texture2D" uid="uid://cc1beo4tkohot" path="res://assets/BlackSqaure.png" id="1_p54lo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hffe"]
+size = Vector2(51, 54)
+
+[node name="BlackSquare" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.499996, 2)
+scale = Vector2(0.172881, 0.194946)
+texture = ExtResource("1_p54lo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_7hffe")
